@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
+<style>
+body
+{
+    font-family: Verdana !important;
+}
+
+@media screen and (max-width: 767px) 
+{
+	.displayflex
+	{   
+	    flex-direction: column;
+	}
+
+    hr
+    {
+        display:none;
+    }
+
+    .PaddingBottom30pxXS 
+    {
+        padding-bottom: 30px;
+    }
+
+    .PaddingBottom20pxXS 
+    {
+        padding-bottom: 20px;
+    }
+
+    .PaddingBottom40pxXS 
+    {
+        padding-bottom: 40px;
+    }
+
+    .PaddingBottom10pxXS 
+    {
+        padding-bottom: 10px;
+    }
+	
+    .textcenterxs
+    {
+        text-align: center;
+    }
+	
+    .offset1
+    {
+        list-style-type: none !important;
+    }
+	
+    img
+    {
+        max-width:98% !important;
+    }
+
+    .boxone
+    {
+        text-align: center;
+        height: 50vh;
+        color: white;
+        background-color: #183A6E;
+    }
+
+    .pt-100
+    {
+        padding-top: 80px;
+    }
+
+    .displaynone1
+    {
+        display: none !important;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) 
+{
+     
+	.main
+	{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.mb-60
+	{
+		margin-bottom: 120px;
+	}
+	
+	.mtp-40
+	{
+		margin-top: 40px;
+	}
+
+	.displaynone2
+	{
+		display: none !important;
+	}
+
+}
+
+@media (min-width: 992px) 
+{
+   
+	.main
+	{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.displaynone2
+	{
+		display: none !important;
+	}
+
+	.mb-60
+	{
+		margin-bottom: 240px;
+	}
+	
+	.mtp-40
+	{
+		margin-top: 40px;
+	}
+
+	.mtp-20
+	{
+		margin-top: 20px;
+	}
+
+	.jc
+	{
+		justify-content: space-between!important;
+	}
+
+}
+
+.displayflex 
+{  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.PaddingBottom15px 
+{
+	padding-bottom: 15px;
+}
+
+.PaddingTop30px 
+{
+	padding-top: 30px;
+}
+
+.PaddingTop20px 
+{
+	padding-top: 20px;
+}
+
+
+.PaddingBottom30px 
+{
+	padding-bottom: 30px;
+}
+
+.PaddingBottom20px 
+{
+	padding-bottom: 20px;
+}
+
+
+.PaddingBottom50px 
+{
+	padding-bottom: 50px;
+}
+
+
+.carousel-indicators button 
+{
+    height: 8px !important;
+    width: 8px !important;
+    margin: 0 8px !important;
+    border-radius: 100%;
+    background-color: white !important;
+}
+
+.carousel-indicators .active 
+{
+    height: 8px !important;
+    width: 8px !important;
+    margin: 0 8px !important;
+    border-radius: 100%;
+    background-color: #183A6E !important;
+}
+
+.imp
+{
+    font-weight: bold;
+}
+
+.color1
+{
+    color:#183A6E !important;
+
+}
+
+.font12
+{
+    font-size: 12px !important;
+}
+
+.font13
+{
+    font-size: 13px !important;
+}
+
+.font14
+{
+    font-size: 14px !important;
+}
+
+.PaddingTop15px
+{
+    padding-top: 15px;
+}
+
+.unone
+{
+    text-decoration: none !important;
+    color:black !important;
+}
+
+.unone2
+{
+    text-decoration: none !important;
+    color:#183A6E !important;
+    font-size: 13px !important;
+    font-weight: bold !important;
+}
+
+.btn1
+{
+    border: 1px solid #183A6E !important;
+    color:#183A6E !important;
+    font-size: 12px !important;
+    border-radius: 0px !important;
+    font-weight: bold !important;
+}
+
+.btn2
+{
+    border: 1px solid #183A6E !important;
+    color:white !important;
+    background-color:#183A6E !important;
+    font-size: 12px !important;
+    border-radius: 0px !important;
+    font-weight: bold;
+}
+
+.PaddingTop50px
+{
+    padding-top: 50px;
+}
+
+.PaddingTop100px
+{
+    padding-top: 100px;
+}
+
+.bi-list-ul
+{
+	color:white !important;
+	background-color:#183A6E;
+    font-size: 25px;
+    border-radius: 2px;
+}
+
+.stitle
+{
+    
+	font-size: 25px !important;
+	color:black !important;
+	text-shadow: 0 0 .1em #183A6E;
+	text-decoration:none !important;
+	text-align:center !important;
+}
+
+.hover1::before 
+{  
+	transform: scaleX(0);
+	transform-origin: bottom right;
+}
+
+.hover1:hover::before 
+{
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+.hover1::before 
+{
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	inset: 0 0 0 0;
+	background: LightSkyBlue;
+	z-index: -1;
+	transition: transform .3s ease;
+}
+
+.hover1 
+{
+	position: relative;
+	font-size:20px;
+}
+
+}
+</style>
+</head>
+<body>  
+	<div class="container">  
+            <div class="row displaynone1 PaddingTop30px">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <b>St. Joseph's Convent High School, Adilabad</b> 
+                    <p>ALUMNI NETWORK</p>
+                </div> 
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6" style="text-align: right !important;">  
+                    <button type = "button" class = "btn btn2 imp">REGISTER</button>&nbsp;&nbsp;&nbsp;<button type = "button" class = "btn btn1 imp">SIGN IN</button>
+                </div>   
+            </div>   
+        </div> 
+        <hr/>
+        <div class="container">  
+            <div class="row displaynone1">
+                <ul class = "nav nav-pills jc">  
+                    <li class = "nav-item">  
+                        <a class = "nav-link unone2  hover1" href = "#">ABOUT US</a>  
+                    </li>  
+                    <li class = "nav-item">  
+                        <a class = "nav-link unone2 hover1" href = "#">NEWSROOM</a>  
+                    </li>  
+                    <li class = "nav-item">  
+                        <a class = "nav-link unone2 hover1" href = "#">EVENTS</a>  
+                    </li>  
+                    <li class = "nav-item">  
+                        <a class = "nav-link unone2 hover1" href = "#">MEMBERS</a>  
+                    </li>  
+                    <li class = "nav-item">  
+                        <a class = "nav-link unone2 hover1" href = "#">GALLERY</a>  
+                    </li>  
+                    <li class = "nav-item">  
+                        <a class = "nav-link unone2 hover1" href = "#">ENGAGE</a>  
+                    </li>  
+                    <li class = "nav-item">  
+                        <a class = "nav-link unone2 hover1" href = "#">MOBILE APP</a>  
+                    </li>  
+                    <li class = "nav-item">  
+                        <a class = "nav-link unone2 hover1" href = "#">CONTACT US</a>  
+                    </li>  
+                </ul>    
+            </div> 
+    </div> 
+    <div class="displaynone2">
+		<div class = "offcanvas offcanvas-top p-2" id = "offcanvasdemo" style="height:60svh">  
+			<div class = "offcanvas-header">  
+				<p class = "offcanvas-title stitle">ST. JOSEPH'S CONVENT HIGH SCHOOL</p>  
+				<button type = "button" class = "btn-close" data-bs-dismiss = "offcanvas"></button>  
+			</div>  
+			<div class = "offcanvas-body">  
+                <ul class = "offset1">  
+                    <li class = "nav-item PaddingBottom20pxXS">  
+                        <a class = "nav-link" href = "#">ABOUT US</a>  
+                    </li>  
+                    <li class = "nav-item PaddingBottom20pxXS">  
+                        <a class = "nav-link" href = "#">NEWSROOM</a>  
+                    </li>  
+                    <li class = "nav-item PaddingBottom20pxXS">  
+                        <a class = "nav-link" href = "#">EVENTS</a>  
+                    </li>  
+                    <li class = "nav-item PaddingBottom20pxXS">  
+                        <a class = "nav-link" href = "#">MEMBERS</a>  
+                    </li>  
+                    <li class = "nav-item PaddingBottom20pxXS">  
+                        <a class = "nav-link" href = "#">GALLERY</a>  
+                    </li>  
+                    <li class = "nav-item PaddingBottom20pxXS">  
+                        <a class = "nav-link" href = "#">ENGAGE</a>  
+                    </li>  
+                    <li class = "nav-item PaddingBottom20pxXS">  
+                        <a class = "nav-link" href = "#">MOBILE APP</a>  
+                    </li>
+                    <li class = "nav-item PaddingBottom40pxXS">  
+                        <a class = "nav-link" href = "#">CONTACT US</a>  
+                    </li>  
+                    <li class = "nav-item PaddingBottom20pxXS">  
+                        <a class = "nav-link" href = "#"><button type = "button" class = "btn btn2 imp">REGISTER</button></a>  
+                    </li>  
+                    <li class = "nav-item">  
+                        <a class = "nav-link" href = "#"><button type = "button" class = "btn btn1 imp">SIGN IN</button></a>  
+                    </li>  
+                </ul>    
+			</div>  
+		</div>
+		<div class="container-fluid mt-3 text-center PaddingBottom20px PaddingTop15px">  
+			<a class = "navbar-brand stitle" href="#">ALUMNI NETWORK</a>&nbsp;&nbsp;&nbsp;
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasdemo">   
+				<i class="bi bi-list-ul"></i>
+			</button>  
+		</div>    
+    </div>
+    <div class="boxone displaynone2">
+        <div class="pt-100">
+            <h6>WELCOME TO THE OFFICIAL<br>ALUMNI NETWORK OF</h6><br>
+            <h4>ST. JOSEPH'S CONVENT HIGH SCHOOL, ADILABAD</h4>
+        </div>
+        <div class="pt-100">
+            <button type = "button" class = "btn" style="background-color:white !important;color:#183A6E !important">REGISTER</button>
+        </div>
+    </div>
+    <div class="displaynone1 PaddingTop30px">
+    <div id="CH" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#CH" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#CH" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#CH" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#CH" data-bs-slide-to="3" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval = "1500">
+            <img src="https://pbs.twimg.com/media/Fqb_915XgAAkG58?format=jpg&name=small" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block mb-60">
+                <h6>WELCOME TO THE OFFICIAL ALUMNI NETWORK OF</h6>
+                <h4>ST. JOSEPH'S CONVENT HIGH SCHOOL, ADILABAD</h4>
+                <a class = "nav-link" href = "#"><button type = "button" class = "btn btn2 imp mtp-40">REGISTER</button></a> 
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval = "1500">
+            <img src="https://pbs.twimg.com/media/Fqb_915XgAAkG58?format=jpg&name=small" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block mb-60">
+                <h6>WELCOME TO THE OFFICIAL ALUMNI NETWORK OF</h6>
+                <h4>ST. JOSEPH'S CONVENT HIGH SCHOOL, ADILABAD</h4>
+                <a class = "nav-link" href = "#"><button type = "button" class = "btn btn2 imp mtp-40">REGISTER</button></a> 
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval = "1500">
+            <img src="https://pbs.twimg.com/media/Fqb_915XgAAkG58?format=jpg&name=small" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block mb-60">
+                <h6>WELCOME TO THE OFFICIAL ALUMNI NETWORK OF</h6>
+                <h4>ST. JOSEPH'S CONVENT HIGH SCHOOL, ADILABAD</h4>
+                <a class = "nav-link" href = "#"><button type = "button" class = "btn btn2 imp mtp-40">REGISTER</button></a> 
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval = "1500">
+            <img src="https://pbs.twimg.com/media/Fqb_915XgAAkG58?format=jpg&name=small" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block mb-60">
+                <h6>WELCOME TO THE OFFICIAL ALUMNI NETWORK OF</h6>
+                <h4>ST. JOSEPH'S CONVENT HIGH SCHOOL, ADILABAD</h4>
+                 <a class = "nav-link" href = "#"><button type = "button" class = "btn btn2 imp mtp-40">REGISTER</button></a>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main PaddingTop50px PaddingBottom15px">
+        <b class="p-2 color1" style="font-size: 18px !important;">WHY US</b>
+        <p class="p-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+    </div>
+    <div class="main PaddingBottom50px">
+		<div class = "displayflex d-flex justify-content-between p-2">  
+            <div class="PaddingBottom30pxXS">
+                <div class = "p-2">
+                    <h6 class="PaddingBottom15px imp">Alumni Talks &nbsp;<span class="bi bi-arrow-up-right"></span></h6>
+                    <img src="https://pbs.twimg.com/media/FqbPgosaMAAgOQO?format=png&name=360x360" alt="Loading">
+                </div>  
+            </div>
+            <div class="PaddingBottom30pxXS">
+                <div class = "p-2">
+                    <h6 class="PaddingBottom15px imp">Chapters &nbsp;<span class="bi bi-arrow-up-right"></span></h6>
+                    <img src="https://pbs.twimg.com/media/FqbPgopakAAbeUq?format=png&name=360x360" alt="Loading">
+                </div>   
+            </div>
+            <div class="PaddingBottom30pxXS">
+                <div class = "p-2">
+                    <h6 class="PaddingBottom15px imp">Giving Back &nbsp;<span class="bi bi-arrow-up-right"></span></h6>
+                    <img src="https://pbs.twimg.com/media/FqbPgoqacAE4DVa?format=png&name=360x360" alt="Loading">
+                </div>  
+            </div> 
+        </div>  
+	</div>
+    <div class="main PaddingBottom30px textcenterxs">
+        <div class = "displayflex d-flex justify-content-around p-2">  
+            <div class = "p-2 PaddingBottom30pxXS">
+                <img src="https://pbs.twimg.com/media/FqbpiUAaQAADWEv?format=png&name=360x360" alt="">
+            </div>  
+            <div class = "p-2 mtp-40 PaddingBottom30pxXS">
+                <h5 class="color1 imp PaddingBottom10pxXS">DOWNLOAD ALUMNI APP</h5>
+                <p class="PaddingBottom10pxXS">Access the official Alumni Network of St. Joseph's Convent High School on mobile.</p>
+                <a href="" class="PaddingBottom10pxXS"><img height="35" width="95" style="border-radius: 8px;" src="https://pbs.twimg.com/media/FqbrzOJXwAAM-65?format=png&name=small" alt=""></a>&nbsp;&nbsp;
+                <a href="" class="PaddingBottom10pxXS"><img height="35" width="95" style="border-radius: 8px;" src="https://pbs.twimg.com/media/Fqbr-Y3WIAAVlXS?format=png&name=small" alt=""></a>
+            </div>  
+            <div class = "p-2 mtp-40">
+                <img src="https://pbs.twimg.com/media/Fqbp0aZWwAI08t1?format=png&name=360x360" alt="">
+            </div>  
+        </div>  
+    </div>
+    <div class="main">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 PaddingBottom30pxXS"> 
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ">
+                    <div class = "displayflex d-flex flex-nowrap">  
+                        <div class = "p-2 textcenterxs">
+                            <h5 class="color1 imp">NEWS & UPDATES</h5>
+                        </div>   
+                    </div>  
+                    <div class = "displayflex d-flex flex-nowrap">  
+                        <div class = "p-2">
+                            <img src="https://pbs.twimg.com/media/Fqbdp23WAAAj5Fo?format=png&name=240x240" alt="">
+                        </div> 
+                        <div class = "p-2">
+                            <b class="font12">NOVEMBER 12, 2022</b><br>
+                            <b class="color1 PaddingTop30px">STARTUP ACCELERATOR PROGRAM</b>
+                            <p class="font14 PaddingTop15px">This Is One Of A Kind Startup Accelerator Program Run By Students And Alumni Of Bmsce Working Together...</p>
+                            <a href="" class="color1 font12 imp unone">Read More <span class="bi bi-arrow-right color1"></span></a>
+                        </div>   
+                    </div>   
+                    <div class = "displayflex d-flex flex-nowrap">  
+                        <div class = "p-2">
+                            <img src="https://pbs.twimg.com/media/Fqbdp21XwAUKdik?format=png&name=240x240" alt="">
+                        </div> 
+                        <div class = "p-2">
+                            <b class="font12">NOVEMBER 18, 2022</b><br>
+                            <b class="color1 PaddingTop30px">WORKSHOP ON LINKEDIN</b>
+                            <p class="font14 PaddingTop15px">How To Utilize Linkedin Effectively - A Workshop On Linkedin Profile Building</p>
+                            <a href="" class="color1 font12 imp unone">Read More <span class="bi bi-arrow-right color1"></span></a>
+                        </div>   
+                    </div>   
+                    <div class = "displayflex d-flex flex-nowrap">  
+                        <div class = "p-2">
+                            <img src="https://pbs.twimg.com/media/Fqbdp2vWYAwa7mr?format=png&name=240x240" alt="">
+                        </div> 
+                        <div class = "p-2">
+                            <b class="font12">NOVEMBER 24, 2022</b><br>
+                            <b class="color1 PaddingTop30px">Fireside Chat</b>
+                            <p class="font14 PaddingTop15px">Fireside Chat On Entrepreneurship. In The 'Fireside Chat On Entrepreneurship', We Talked To Two Entrepreneurs...</p>
+                            <a href="" class="color1 font12 imp unone">Read More <span class="bi bi-arrow-right color1"></span></a>
+                        </div>   
+                    </div>   
+                    <div class = "displayflex d-flex flex-nowrap">  
+                        <div class = "p-2">
+                            <img src="https://pbs.twimg.com/media/Fqbdp2vWcAEHuWW?format=png&name=240x240" alt="">
+                        </div> 
+                        <div class = "p-2">
+                            <b class="font12">NOVEMBER 28, 2022</b><br>
+                            <b class="color1 PaddingTop30px">BIG WIN FOR DRILL TEAM!</b>
+                            <p class="font14 PaddingTop15px">This Week We Are Focusing On Mental Health, Positive Mindset And Anxiety Relieving Tips To Better Handle The Stress...</p>
+                            <a href="" class="color1 font12 imp unone">Read More <span class="bi bi-arrow-right color1"></span></a>
+                        </div>   
+                    </div>  
+                </div> 
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 textcenterxs PaddingTop30px">
+                    <button type = "button" class = "btn btn1">VIEW MORE</button>
+                </div>
+            </div>   
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"> 
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 boxtwo">
+                <div class = "displayflex d-flex textcenterxs">  
+                    <div class = "p-2">
+                        <h5 class="color1 imp">PROGRAMS & EVENTS</h5>
+                    </div>   
+                </div>  
+                <div class = "d-flex flex-nowrap">  
+                    <div class = "p-2 text-center">
+                        <p class="color1">NOV<br><b>13</b></p>
+                    </div> 
+                    <div class = "p-2">
+                        <b>PRESIDENTIAL BALL</b>
+                        <p class="font14">at School Ground</p>
+                    </div>   
+                </div>  
+                <div class = "d-flex flex-nowrap">  
+                    <div class = "p-2 text-center">
+                        <p class="color1">NOV<br><b>18</b></p>
+                    </div> 
+                    <div class = "p-2">
+                        <b>TOWN HALL MEETING</b>
+                        <p class="font14">at School Ground</p>
+                    </div>   
+                </div> 
+                <div class = "d-flex flex-nowrap">  
+                    <div class = "p-2 text-center">
+                        <p class="color1">NOV<br><b>23</b></p>
+                    </div> 
+                    <div class = "p-2">
+                        <b>ENDOWMENT DINNER DANCE</b>
+                        <p class="font14">at School Ground</p>
+                    </div>   
+                </div> 
+                <div class = "d-flex flex-nowrap">  
+                    <div class = "p-2 text-center">
+                        <p class="color1">NOV<br><b>30</b></p>
+                    </div> 
+                    <div class = "p-2">
+                        <b>WORKSHOPS FOR HIGH SCHOOL STUDENTS</b>
+                        <p class="font14">at School Ground</p>
+                    </div>   
+                </div> 
+                <div class = "d-flex flex-nowrap">  
+                    <div class = "p-2 text-center">
+                        <p class="color1">DEC<br><b>13</b></p>
+                    </div> 
+                    <div class = "p-2">
+                        <b>GOLDEN JUBILEE CELEBRATION & MEGA REUNION</b>
+                        <p class="font14">at School Ground</p>
+                    </div>   
+                </div> 
+                <div class = "d-flex flex-nowrap">  
+                    <div class = "p-2 text-center">
+                        <p class="color1">DEC<br><b>25</b></p>
+                    </div> 
+                    <div class = "p-2">
+                        <b>CHRISTMAS REUNION PARTY</b>
+                        <p class="font14">at School Ground</p>
+                    </div>   
+                </div> 
+                <div class = "d-flex flex-nowrap">  
+                    <div class = "p-2 text-center">
+                        <p class="color1">DEC<br><b>29</b></p>
+                    </div> 
+                    <div class = "p-2">
+                        <b>COMMUNITY SPIRIT DAY</b>
+                        <p class="font14">at School Ground</p>
+                    </div>   
+                </div>  
+                <div class = "d-flex flex-nowrap">  
+                    <div class = "p-2 text-center">
+                        <p class="color1">DEC<br><b>31</b></p>
+                    </div> 
+                    <div class = "p-2">
+                        <b>NEWYEAR EVE PARTY</b>
+                        <p class="font14">at School Ground</p>
+                    </div>   
+                </div> 
+            </div> 
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 textcenterxs PaddingTop30px">
+                <button type = "button" class = "btn btn1">VIEW MORE UPCOMING EVENTS</button>
+            </div>
+            </div>  
+        </div>  
+    </div>   
+    <div class="PaddingBottom50px">&nbsp;</div>
+	<div style="background-color: WhiteSmoke;"> 
+		<div class = "displayflex flex-nowrap p-5 container d-flex">
+			<div class = "p-3 mtp-40">
+                <b class="color1">JOBS & CAREER</b>
+                <h3 class="imp PaddingTop15px">Looking for Jobs?</h3>
+                <p class="PaddingTop20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt nisi in massa posuere, in porta ante accumsan. Maecenas in gravida dolor. Maecenas vulputate nulla urna, ac auctor sapien pharetra quis. Integer suscipit ut elit sit amet sodales.</p>
+                <div class="PaddingTop30px">
+                    <button type = "button" class = "btn1 btn">EXPLORE OPPORTUNITIES</button>
+                </div>
+            </div>  
+			<div class = "p-3">
+                <img height="320" width="350" src="https://pbs.twimg.com/media/FqbPgjoaUAAjBSI?format=png&name=small" alt="JOBS & CAREER">
+			</div>  
+        </div>  
+    </div>
+    <div class="PaddingBottom50px ">&nbsp;</div>
+    <div class="main"> 
+        <div class="textcenterxs">
+            <h4 class="imp color1">MEMBERS</h4>
+        </div>
+        <div class = "jc d-flex flex-wrap">  
+            <div class = "p-3">
+                <img src="https://pbs.twimg.com/media/FqbTjNCWcAErRM3?format=png&name=240x240" alt="">
+            </div>  
+            <div class = "p-3">
+                <img src="https://pbs.twimg.com/media/FqbTjM8WIAEwbLM?format=png&name=240x240" alt="">
+            </div>  
+            <div class = "p-3">
+                <img src="https://pbs.twimg.com/media/FqbTjM8X0AET4yP?format=png&name=240x240" alt="">
+            </div>  
+            <div class = "p-3">
+                <img src="https://pbs.twimg.com/media/FqbTjNBXsAM21M7?format=png&name=240x240" alt="">
+            </div>  
+            <div class = "p-3">
+                <img src="https://pbs.twimg.com/media/FqbUUNUX0AEz04W?format=png&name=240x240" alt="">
+            </div>  
+            <div class = "p-3">
+                <img src="https://pbs.twimg.com/media/FqbUUNRWIAE5tAL?format=png&name=240x240" alt="">
+            </div>  
+        </div>  
+        <div class="text-center PaddingTop30px">
+            <button type = "button" class = "btn1 btn">VIEW MORE</button>
+        </div>
+    </div>
+    <div class="PaddingTop100px"></div>
+    <div class="main textcenterxs">
+		<div class = "displayflex jc d-flex flex-wrap">  
+			<div class = "p-2">
+                <img src="https://pbs.twimg.com/media/FqcJ33JX0AIQT1x?format=png&name=240x240" alt="">
+            </div>  
+			<div class = "p-2">
+                <p>Copyright © 2022 Vaave. All rights reserved.</p>
+            </div>  
+			<div class = "p-2">
+                <a href="" class="unone">Disclaimer</a>
+            </div> 
+			<div class = "p-2">
+                <a href="" class="unone">Terms of Use </a>
+            </div>  
+			<div class = "p-2">
+                <a href="" class="unone">Privacy Policy</a>
+            </div>  
+			<div class = "p-2">
+                <a href="" class="unone">Alumni Directory</a>
+            </div>  
+			<div class = "p-2">
+                <a href=""><img height="35" width="95" style="border-radius: 8px;" src="https://pbs.twimg.com/media/FqbrzOJXwAAM-65?format=png&name=small" alt=""></a>
+            </div>  
+			<div class = "p-2">
+                <a href=""><img height="35" width="95" style="border-radius: 8px;" src="https://pbs.twimg.com/media/FqbrzOJXwAAM-65?format=png&name=small" alt=""></a>
+            </div>  
+		</div> 
+    </div>
+</body>
+</html>
+
+
+            
