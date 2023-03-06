@@ -1,0 +1,314 @@
+body
+{
+    font-family: Verdana !important;
+}
+
+@media screen and (max-width: 767px) 
+{
+	.displayflex
+	{   
+	    flex-direction: column;
+	}
+
+    hr
+    {
+        display:none;
+    }
+
+    .PaddingBottom30pxXS 
+    {
+        padding-bottom: 30px;
+    }
+
+    .PaddingBottom20pxXS 
+    {
+        padding-bottom: 20px;
+    }
+
+    .PaddingBottom40pxXS 
+    {
+        padding-bottom: 40px;
+    }
+
+    .PaddingBottom10pxXS 
+    {
+        padding-bottom: 10px;
+    }
+	
+    .textcenterxs
+    {
+        text-align: center;
+    }
+	
+    .offset1
+    {
+        list-style-type: none !important;
+    }
+	
+    img
+    {
+        max-width:98% !important;
+    }
+
+    .boxone
+    {
+        text-align: center;
+        height: 50vh;
+        color: white;
+        background-color: #183A6E;
+    }
+
+    .pt-100
+    {
+        padding-top: 80px;
+    }
+
+    .displaynone1
+    {
+        display: none !important;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) 
+{
+     
+	.main
+	{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.mb-60
+	{
+		margin-bottom: 120px;
+	}
+	
+	.mtp-40
+	{
+		margin-top: 40px;
+	}
+
+	.displaynone2
+	{
+		display: none !important;
+	}
+
+}
+
+@media (min-width: 992px) 
+{
+   
+	.main
+	{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.displaynone2
+	{
+		display: none !important;
+	}
+
+	.mb-60
+	{
+		margin-bottom: 240px;
+	}
+	
+	.mtp-40
+	{
+		margin-top: 40px;
+	}
+
+	.mtp-20
+	{
+		margin-top: 20px;
+	}
+
+	.jc
+	{
+		justify-content: space-between!important;
+	}
+
+}
+
+.displayflex 
+{  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.PaddingBottom15px 
+{
+	padding-bottom: 15px;
+}
+
+.PaddingTop30px 
+{
+	padding-top: 30px;
+}
+
+.PaddingTop20px 
+{
+	padding-top: 20px;
+}
+
+
+.PaddingBottom30px 
+{
+	padding-bottom: 30px;
+}
+
+.PaddingBottom20px 
+{
+	padding-bottom: 20px;
+}
+
+
+.PaddingBottom50px 
+{
+	padding-bottom: 50px;
+}
+
+
+.carousel-indicators button 
+{
+    height: 8px !important;
+    width: 8px !important;
+    margin: 0 8px !important;
+    border-radius: 100%;
+    background-color: white !important;
+}
+
+.carousel-indicators .active 
+{
+    height: 8px !important;
+    width: 8px !important;
+    margin: 0 8px !important;
+    border-radius: 100%;
+    background-color: #183A6E !important;
+}
+
+.imp
+{
+    font-weight: bold;
+}
+
+.color1
+{
+    color:#183A6E !important;
+
+}
+
+.font12
+{
+    font-size: 12px !important;
+}
+
+.font13
+{
+    font-size: 13px !important;
+}
+
+.font14
+{
+    font-size: 14px !important;
+}
+
+.PaddingTop15px
+{
+    padding-top: 15px;
+}
+
+.unone
+{
+    text-decoration: none !important;
+    color:black !important;
+}
+
+.unone2
+{
+    text-decoration: none !important;
+    color:#183A6E !important;
+    font-size: 13px !important;
+    font-weight: bold !important;
+}
+
+.btn1
+{
+    border: 1px solid #183A6E !important;
+    color:#183A6E !important;
+    font-size: 12px !important;
+    border-radius: 0px !important;
+    font-weight: bold !important;
+}
+
+.btn2
+{
+    border: 1px solid #183A6E !important;
+    color:white !important;
+    background-color:#183A6E !important;
+    font-size: 12px !important;
+    border-radius: 0px !important;
+    font-weight: bold;
+}
+
+.PaddingTop50px
+{
+    padding-top: 50px;
+}
+
+.PaddingTop100px
+{
+    padding-top: 100px;
+}
+
+.bi-list-ul
+{
+	color:white !important;
+	background-color:#183A6E;
+    font-size: 25px;
+    border-radius: 2px;
+}
+
+.stitle
+{
+    
+	font-size: 25px !important;
+	color:black !important;
+	text-shadow: 0 0 .1em #183A6E;
+	text-decoration:none !important;
+	text-align:center !important;
+}
+
+.hover1::before 
+{  
+	transform: scaleX(0);
+	transform-origin: bottom right;
+}
+
+.hover1:hover::before 
+{
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+.hover1::before 
+{
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	inset: 0 0 0 0;
+	background: LightSkyBlue;
+	z-index: -1;
+	transition: transform .3s ease;
+}
+
+.hover1 
+{
+	position: relative;
+	font-size:20px;
+}
+
+}
